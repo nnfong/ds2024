@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{Longest Path with MapReduce: Report}
+\author{Phong}
+\date{\04/19/2024}
+\maketitle
+
+\section{Introduction}
+In this report,i used implementation of the Longest Path project using the MapReduce paradigm. And utilize a custom implementation in C to demonstrate the Map and Reduce phases.
+
+\section{MapReduce Implementation}
+
+\subsection{Mapper Function}
+The mapper function reads input files containing file paths. For each path, it calculates the length and emits a key-value pair, where the key is the path length and the value is the file path.
+
+\subsection{Reducer Function}
+The reducer function aggregates the mapped key-value pairs and identifies the longest path(s) based on the path length.
+
+\section{Conclusion}
+My implementation effectively finds the longest path(s) among the provided input files using the MapReduce approach. With further optimizations and enhancements, it can be scaled to handle larger datasets and parallel processing environments.
+
+\end{document}
