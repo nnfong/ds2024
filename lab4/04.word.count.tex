@@ -1,0 +1,14 @@
+\documentclass{article}
+\begin{document}
+\title{Word Count with Custom MapReduce: Report}
+\author{Phong}
+\date{4/19/2024}
+\maketitle
+\section{Introduction}
+In this report, I used implementation of the Word Count example using a custom MapReduce-like approach.
+\section{MapReduce Implementation}
+\subsection{Mapper Function}
+The mapper function (\texttt{map}) reads input lines and extracts words, converting them to lowercase and removing non-alphanumeric characters. It then emits key-value pairs where the key is the word and the value is 1.
+\subsection{Reducer Function}
+The reducer function (\texttt{reduce}) aggregates the counts for each word by summing up the values associated with the same key. It then prints the word and its total count.
+\end{document}
